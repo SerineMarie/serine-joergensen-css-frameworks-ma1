@@ -1,0 +1,15 @@
+$colors: (
+  dark-grey: #6a6a6a,
+  light-grey: #e2e2e2,
+  text-grey: #8d8d8d,
+  dark-pink: #c32c72,
+  card-grey: #f4f3ee,
+  background-grey: #e5e5e5,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+$opensans: "Open Sans", sans-serif;
+$archivo: "Archivo Narrow", sans-serif;

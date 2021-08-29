@@ -1,0 +1,191 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #e5e5e5;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container-flex, footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}
+
+nav {
+  background: #f4f3ee;
+}
+
+@media (min-width: 768px) {
+  nav .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.nav-link {
+  margin-left: -10%;
+}
+
+.logo {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+ul {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+a.active {
+  color: #c32c72;
+}
+
+.hamburger__label {
+  display: block;
+  padding: 1%;
+  font-size: 2.1em;
+  float: right;
+}
+
+#hamburger__menu {
+  display: none;
+}
+
+#hamburger__menu:checked ~ nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media (min-width: 768px) {
+  .hamburger__label {
+    display: none;
+  }
+}
+
+footer {
+  background: #f4f3ee;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 1rem;
+  padding: 1%;
+  font-family: "Archivo Narrow", sans-serif;
+  color: #8d8d8d;
+}
+
+h1 {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.row .card {
+  border-radius: 10%;
+  border: none;
+  position: relative;
+  padding-top: 75%;
+  background: #f4f3ee;
+}
+
+.row .card__pink--border {
+  border: 2px solid #c32c72;
+  background: white;
+  height: 100%;
+  border-radius: 10%;
+  padding-top: 75%;
+}
+
+.row .card__pink--body {
+  border: 2px solid white;
+  background: #c32c72;
+  height: 100%;
+  border-radius: 10%;
+  padding-top: 75%;
+}
+/*# sourceMappingURL=style.css.map */
