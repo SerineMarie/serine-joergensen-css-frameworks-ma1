@@ -83,6 +83,10 @@ a {
   color: #8d8d8d;
 }
 
+a.active {
+  color: #c32c72;
+}
+
 ul {
   display: none;
 }
@@ -98,10 +102,6 @@ ul {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-a.active {
-  color: #c32c72;
 }
 
 .hamburger__label {

@@ -27,6 +27,10 @@ nav {
 a {
   text-decoration: none;
   color: getColor(text-grey);
+
+  &.active {
+    color: getColor(dark-pink);
+  }
 }
 
 ul {
@@ -37,10 +41,6 @@ ul {
     display: flex;
     flex-direction: row;
   }
-}
-
-a.active {
-  color: getColor(dark-pink);
 }
 
 .hamburger__label {
